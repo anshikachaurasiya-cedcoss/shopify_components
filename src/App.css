@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+.Polaris-Frame--hasTopBar .Polaris-Frame__Main {
+    padding-top: 1.9rem !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Polaris-Icon--colorBase svg {
+    fill: var(--p-color-icon-on-color) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media (min-width: 48em) {
+    .Polaris-Page__Content {
+        padding-top: var(--p-space-12) !important;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.fixed__bulk {
+    position: fixed;
+    bottom: 70px;
+    z-index: 10000;
+    left: 700px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.status__wrapper {
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    
 }
